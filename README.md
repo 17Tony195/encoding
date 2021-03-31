@@ -1,5 +1,5 @@
 # Encoding/Decoding
-======
+
 ### Plik ‘main.py’
 Do szyfrowania tekstu służy funkcja „encode()”.  
 Do deszyfrowania tekstu służy funkcja „decode()”.  
