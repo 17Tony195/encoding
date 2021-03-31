@@ -1,6 +1,6 @@
 # Encoding/Decoding
 ======
-Plik ‘main.py’
+### Plik ‘main.py’
 Do szyfrowania tekstu służy funkcja „encode()”.  
 Do deszyfrowania tekstu służy funkcja „decode()”.  
 **Funkcja encode()** – przyjmuje jako parametr tekst do szyfrowania. Zwraca słownik, którego kluczami są „encoded” – zaszyfrowany tekst, oraz „key” – losowo wygenerowany klucz.
@@ -20,7 +20,7 @@ Deszyfrowanie polega na tym samym, jak działa funkcja „encode()”, ale w spo
 **Funkcja rand()** – zwraca liczbę losową z zakresu od a do b, przekazanych jako parametry.
 
 
-Plik ‘test.py’
+### Plik ‘test.py’
 Aby sprawdzić działanie funkcji encode/decode można zainstalować moduł „uvicorn”. Aby uruchomić lokalnie serwer należy wpisać do konsoli „uvicorn main:app --reload”
 Wykorzystując bibliotekę requests można wysyłać żądania na serwer lokalny. W pliku ‘test.py’ jest zaimplementowany taki przykład.
 
