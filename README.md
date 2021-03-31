@@ -1,9 +1,9 @@
 # Encoding/Decoding
-
-### Plik ‘main.py’
+======
+Plik ‘main.py’
 Do szyfrowania tekstu służy funkcja „encode()”.  
 Do deszyfrowania tekstu służy funkcja „decode()”.  
-Funkcja encode() – przyjmuje jako parametr tekst do szyfrowania. Zwraca słownik, którego kluczami są „encoded” – zaszyfrowany tekst, oraz „key” – losowo wygenerowany klucz.
+**Funkcja encode()** – przyjmuje jako parametr tekst do szyfrowania. Zwraca słownik, którego kluczami są „encoded” – zaszyfrowany tekst, oraz „key” – losowo wygenerowany klucz.
 
 Na początku ta funkcja tworzy losowy klucz od 5 do 10 znaków, który będzie potrzebny do deszyfrowania tekstu. Dalej jest szyfrowany każdy znak po kolei:
 Kroki szyfrowania:
@@ -15,15 +15,16 @@ Kroki szyfrowania:
 6)	Wartość zmiennej temp_key jest przypisana do zmiennej last_key, wartość której będzie kluczem dla następnego szyfrowanego znaku.
 7)	Wartość zmiennej temp_key jest dodawana do zmiennej, która będzie przechowywać cały szyfrowany tekst.
 
-Funkcja decode() – przyjmuje jako parametry zaszyfrowany tekst oraz klucz.
+**Funkcja decode()** – przyjmuje jako parametry zaszyfrowany tekst oraz klucz.
 Deszyfrowanie polega na tym samym, jak działa funkcja „encode()”, ale w sposób odwrotny. Zwraca słownik, kluczem którego jest deszyfrowany tekst.
-Funkcja rand() – zwraca liczbę losową z zakresu od a do b, przekazanych jako parametry.
+**Funkcja rand()** – zwraca liczbę losową z zakresu od a do b, przekazanych jako parametry.
 
 
-### Plik ‘test.py’
+Plik ‘test.py’
 Aby sprawdzić działanie funkcji encode/decode można zainstalować moduł „uvicorn”. Aby uruchomić lokalnie serwer należy wpisać do konsoli „uvicorn main:app --reload”
 Wykorzystując bibliotekę requests można wysyłać żądania na serwer lokalny. W pliku ‘test.py’ jest zaimplementowany taki przykład.
-Jeżeli zmienna ‘text’ będzie miała wartość 'Hello, apple!\n New line \t tab char', 
-to czasami serwer może nie zwrócić deszyfrowanego tekstu. Jednak, przy tym samym kluczu i tekście szyfrowanym, metoda ‘decode’ będzie działać dobrze, jeżeli uruchamiać te funkcje bez używania serwera. Również będzie działać, jeżeli ręcznie wprowadzić te dane i uruchomić te funkcje klikając przycisk w przeglądarce (np. FastAPI - http://127.0.0.1:8000/docs#/).
+
+Jeżeli zmienna ‘text’ będzie miała wartość 'Hello, apple!\n New line \t tab char', to czasami serwer może nie zwrócić deszyfrowanego tekstu. 
+Jednak, przy tym samym kluczu i tekście szyfrowanym, metoda ‘decode’ będzie działać dobrze, jeżeli uruchamiać te funkcje bez używania serwera. Również będzie działać, jeżeli ręcznie wprowadzić te dane i uruchomić te funkcje klikając przycisk w przeglądarce (np. FastAPI - http://127.0.0.1:8000/docs#/).
 
 
