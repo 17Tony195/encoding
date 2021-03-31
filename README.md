@@ -1,8 +1,8 @@
 # Encoding/Decoding
 
 ### Plik ‘main.py’
-Do szyfrowania tekstu służy funkcja „encode()”.  
-Do deszyfrowania tekstu służy funkcja „decode()”.  
+_Do szyfrowania tekstu służy funkcja „encode()”.  
+Do deszyfrowania tekstu służy funkcja „decode()”._ 
 **Funkcja encode()** – przyjmuje jako parametr tekst do szyfrowania. Zwraca słownik, którego kluczami są „encoded” – zaszyfrowany tekst, oraz „key” – losowo wygenerowany klucz.
 
 Na początku ta funkcja tworzy losowy klucz od 5 do 10 znaków, który będzie potrzebny do deszyfrowania tekstu. Dalej jest szyfrowany każdy znak po kolei:
